@@ -1,4 +1,4 @@
-package com.xaqnus.springsecurity_jwt.config;
+package com.xaqnus.springsecurity_jwt.spring_security.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

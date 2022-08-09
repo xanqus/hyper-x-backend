@@ -1,4 +1,4 @@
-package com.xaqnus.springsecurity_jwt.filter;
+package com.xaqnus.springsecurity_jwt.spring_security.filter;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;

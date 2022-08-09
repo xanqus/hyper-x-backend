@@ -1,7 +1,7 @@
-package com.xaqnus.springsecurity_jwt.controller;
+package com.xaqnus.springsecurity_jwt.user.controller;
 
-import com.xaqnus.springsecurity_jwt.dao.UserRepository;
-import com.xaqnus.springsecurity_jwt.model.User;
+import com.xaqnus.springsecurity_jwt.user.dao.UserRepository;
+import com.xaqnus.springsecurity_jwt.user.domain.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -10,20 +10,11 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
-public class RestApiController {
+public class UserApiController {
 
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
     private final UserRepository userRepository;
 
-    @GetMapping("home")
-    public String home() {
-        return "<h1>home</h1>";
-    }
-
-    @PostMapping("token")
-    public String token() {
-        return "<h1>token</h1>";
-    }
 
     @PostMapping("join")
     public String join(@RequestBody User user) {

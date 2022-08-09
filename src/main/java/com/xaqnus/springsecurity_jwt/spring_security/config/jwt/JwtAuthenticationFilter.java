@@ -1,10 +1,10 @@
-package com.xaqnus.springsecurity_jwt.config.jwt;
+package com.xaqnus.springsecurity_jwt.spring_security.config.jwt;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.xaqnus.springsecurity_jwt.auth.PrincipalDetails;
-import com.xaqnus.springsecurity_jwt.model.User;
+import com.xaqnus.springsecurity_jwt.spring_security.auth.PrincipalDetails;
+import com.xaqnus.springsecurity_jwt.user.domain.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

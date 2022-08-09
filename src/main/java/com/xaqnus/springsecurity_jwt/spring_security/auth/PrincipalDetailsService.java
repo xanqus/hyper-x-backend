@@ -1,7 +1,7 @@
-package com.xaqnus.springsecurity_jwt.auth;
+package com.xaqnus.springsecurity_jwt.spring_security.auth;
 
-import com.xaqnus.springsecurity_jwt.dao.UserRepository;
-import com.xaqnus.springsecurity_jwt.model.User;
+import com.xaqnus.springsecurity_jwt.user.dao.UserRepository;
+import com.xaqnus.springsecurity_jwt.user.domain.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

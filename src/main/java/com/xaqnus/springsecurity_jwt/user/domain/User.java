@@ -1,4 +1,4 @@
-package com.xaqnus.springsecurity_jwt.model;
+package com.xaqnus.springsecurity_jwt.user.domain;
 
 import lombok.Data;
 

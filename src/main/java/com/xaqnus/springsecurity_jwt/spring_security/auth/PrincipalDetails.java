@@ -1,6 +1,6 @@
-package com.xaqnus.springsecurity_jwt.auth;
+package com.xaqnus.springsecurity_jwt.spring_security.auth;
 
-import com.xaqnus.springsecurity_jwt.model.User;
+import com.xaqnus.springsecurity_jwt.user.domain.User;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
