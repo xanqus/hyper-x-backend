@@ -1,8 +1,8 @@
-package com.xaqnus.springsecurity_jwt.spring_security.config;
+package com.xaqnus.hyper_x_backend.spring_security.config;
 
-import com.xaqnus.springsecurity_jwt.spring_security.config.jwt.JwtAuthenticationFilter;
-import com.xaqnus.springsecurity_jwt.spring_security.config.jwt.JwtAuthorizationFilter;
-import com.xaqnus.springsecurity_jwt.user.dao.UserRepository;
+import com.xaqnus.hyper_x_backend.spring_security.config.jwt.JwtAuthenticationFilter;
+import com.xaqnus.hyper_x_backend.spring_security.config.jwt.JwtAuthorizationFilter;
+import com.xaqnus.hyper_x_backend.user.dao.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

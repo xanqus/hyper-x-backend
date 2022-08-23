@@ -1,4 +1,4 @@
-package com.xaqnus.springsecurity_jwt.spring_security.domain;
+package com.xaqnus.hyper_x_backend.spring_security.domain;
 
 import lombok.Data;
 import org.springframework.http.HttpStatus;
