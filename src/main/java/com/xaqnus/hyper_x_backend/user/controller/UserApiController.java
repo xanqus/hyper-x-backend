@@ -16,7 +16,7 @@ public class UserApiController {
     private final UserRepository userRepository;
 
 
-    @PostMapping("join")
+    @PostMapping("/api/v1/join")
     public String join(@RequestBody User user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         user.setRoles("ROLE_USER");
