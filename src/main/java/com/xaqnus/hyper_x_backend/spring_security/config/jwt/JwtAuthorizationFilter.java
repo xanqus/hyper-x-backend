@@ -61,8 +61,8 @@ public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
             responseDTO.setCode("TOKEN-0001");
             responseDTO.setMessage("token has expired");
             responseDTO.setStatus(HttpStatus.UNAUTHORIZED);
-            response.setStatus(HttpStatus.UNAUTHORIZED.value());
-            response.getWriter().write(new ObjectMapper().writeValueAsString(responseDTO));
+            ObjectMapper objectMapper = new ObjectMapper();
+            objectMapper.writeValue(response.getOutputStream(), responseDTO);
 
         }
 

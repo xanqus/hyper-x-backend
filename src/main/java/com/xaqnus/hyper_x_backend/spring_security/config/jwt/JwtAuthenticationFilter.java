@@ -24,7 +24,11 @@ import java.util.Date;
 // /login 요청해서 username, password를 전송하면(post) UsernamePasswordAuthenticationFilter가 동작을함
 @RequiredArgsConstructor
 public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
-    private final AuthenticationManager authenticationManager;
+    private AuthenticationManager authenticationManager;
+    public JwtAuthenticationFilter(AuthenticationManager authenticationManager) {
+        this.authenticationManager = authenticationManager;
+        setFilterProcessesUrl("/api/v1/login");
+    }
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
         System.out.println("로그인 시도중");
