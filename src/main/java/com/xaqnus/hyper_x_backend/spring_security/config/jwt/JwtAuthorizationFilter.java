@@ -8,6 +8,7 @@ import com.xaqnus.hyper_x_backend.spring_security.auth.PrincipalDetails;
 import com.xaqnus.hyper_x_backend.spring_security.domain.ResponseDTO;
 import com.xaqnus.hyper_x_backend.user.dao.UserRepository;
 import com.xaqnus.hyper_x_backend.user.domain.User;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -61,6 +62,8 @@ public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
             responseDTO.setCode("TOKEN-0001");
             responseDTO.setMessage("token has expired");
             responseDTO.setStatus(HttpStatus.UNAUTHORIZED);
+            response.setStatus(403);
+            response.addHeader(HttpHeaders.CONTENT_TYPE,"application/json; charset=UTF-8");
             ObjectMapper objectMapper = new ObjectMapper();
             objectMapper.writeValue(response.getOutputStream(), responseDTO);
 
